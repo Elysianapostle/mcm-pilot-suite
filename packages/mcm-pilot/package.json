@@ -1,0 +1,19 @@
+{
+  "name": "mcm-pilot",
+  "version": "0.3.0",
+  "description": "国赛数学建模「解题—绘图—论文」一体化编排插件：mcm_start 题目启动+缺口问卷、mcm_kb_load 知识库约束注入、mcm_fig_trace 图表溯源/重绘、mcm_status 进度看板。业务层为独立 Python CLI（mcm_pilot.py，纯标准库），适配层仅薄壳转发。",
+  "type": "module",
+  "main": "index.js",
+  "private": true,
+  "license": "MIT",
+  "keywords": ["dsh", "dsh-plugin", "mcm", "数学建模", "竞赛", "orchestrator"],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "files": ["index.js", "mcm_pilot.py", "cordis.patch.yml", "README.md"],
+  "engines": {
+    "node": ">=18"
+  }
+}

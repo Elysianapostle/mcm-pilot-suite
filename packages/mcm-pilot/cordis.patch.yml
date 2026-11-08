@@ -1,0 +1,15 @@
+# dsh bundle patch: mcm-pilot 插件入口。
+# 安装方式（二选一）：
+#   A. 经 `dsh plugin --profile web add <本包路径>` 安装（自动接线）；
+#   B. 手动 flat fallback：复制本包到 $DSH_HOME/profiles/node_modules/mcm-pilot/，
+#      并在 $DSH_HOME/cordis.patch.yml 的 insert 列表追加（先 disabled: true 灰度）：
+#        - id: mcm-pilot
+#          name: 'mcm-pilot'
+#          disabled: true
+# 业务层依赖：mcm_pilot.py（独立 CLI，纯标准库 Python ≥3.8）。
+# 解析顺序：$MCM_PILOT_CLI → 本包内 mcm_pilot.py → <工作区>/plugin/mcm_pilot.py；
+# Python：$MCM_PYTHON → 安装期配置文件 → PATH。详见仓库 docs/DEPENDENCIES.md。
+- insert:
+    - id: mcm-pilot
+      name: 'mcm-pilot'
+      disabled: true

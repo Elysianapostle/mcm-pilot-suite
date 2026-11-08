@@ -1,0 +1,23 @@
+{
+  "language": "zh",
+  "data": [
+    {"path": "tests/fixtures/q1_sensitivity.csv", "format": "csv"}
+  ],
+  "plots": [
+    {
+      "output_name": "fig_partial_ok",
+      "chart_type": "line",
+      "data_ref": "tests/fixtures/q1_sensitivity.csv",
+      "x": "时间",
+      "y": "产量",
+      "notes": "正常的一张图"
+    },
+    {
+      "output_name": "fig_badcol",
+      "chart_type": "line",
+      "data_ref": "tests/fixtures/q1_sensitivity.csv",
+      "x": "时间",
+      "y": "不存在列"
+    }
+  ]
+}

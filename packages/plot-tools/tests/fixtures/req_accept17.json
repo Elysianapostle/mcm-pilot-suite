@@ -1,0 +1,19 @@
+{
+  "language": "zh",
+  "data": [
+    {
+      "path": "tests/fixtures/q1_sensitivity.csv"
+    }
+  ],
+  "plots": [
+    {
+      "output_name": "fig_accept_linehue",
+      "chart_type": "line",
+      "data_ref": "tests/fixtures/q1_sensitivity.csv",
+      "x": "时间",
+      "y": "产量",
+      "hue": "地区",
+      "notes": "快查：line+hue 的 group_top_mean 措辞"
+    }
+  ]
+}

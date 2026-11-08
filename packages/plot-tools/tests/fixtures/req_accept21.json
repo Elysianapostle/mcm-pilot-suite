@@ -1,0 +1,60 @@
+{
+  "template": "roadmap-5band",
+  "language": "zh",
+  "lint_only": true,
+  "content": {
+    "title": "lint 模式下一次性返回全部字段问题",
+    "rails": [
+      {"chevron": "破题", "label": "问题界定"},
+      {"chevron": "准备", "label": "数据口径"},
+      {"chevron": "方法", "label": "模型算法"},
+      {"chevron": "结果", "label": "实证结论"},
+      {"chevron": "评价", "label": "稳健推广"}
+    ],
+    "band1": {
+      "headline": "lint 演示",
+      "items": ["只有一个子问题"]
+    },
+    "band2": {
+      "sources": ["历史产量"],
+      "assumptions": "需求按月稳定",
+      "symbols": "P_i, C_i",
+      "left_vertical": "输入侧",
+      "content": "区域产能匹配模型",
+      "subframe": "特征维度",
+      "dims": ["产量"],
+      "right_vertical": "度量侧",
+      "metrics": ["缺行格式"],
+      "aggregator": "加权汇总",
+      "datasource": "产量台账"
+    },
+    "band3": {
+      "top": "全局视角",
+      "bottom": "局部视角",
+      "left": ["约束规划"],
+      "right": ["异质性来源", "传导机制"],
+      "left_vertical": "建模要素",
+      "right_vertical": "机制机理",
+      "content": "双视角模型"
+    },
+    "band4": {
+      "banner": "对比",
+      "left_vertical": "求解",
+      "right_vertical": "对比",
+      "left_items": ["数值求解"],
+      "right_items": ["基线模型"],
+      "right_spans": ["结论"],
+      "middle": "印证"
+    },
+    "band5": {
+      "left_items": ["参数敏感性"],
+      "corner": "稳健性",
+      "pill": "结论",
+      "cycle": ["评估", "迭代"],
+      "content": "评价",
+      "hex": "稳",
+      "metrics": [["优点", "可解释"], ["依赖", "数据"]],
+      "cases": ["论文复用", "竞赛推广", "方法沉淀", "更多场景"]
+    }
+  }
+}

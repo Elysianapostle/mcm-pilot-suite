@@ -1,0 +1,61 @@
+{
+  "template": "roadmap-5band",
+  "output_name": "roadmap_baseline",
+  "language": "zh",
+  "content": {
+    "title": "数学建模求解总体技术路线",
+    "rails": [
+      {"chevron": "破题", "label": "问题分析"},
+      {"chevron": "准备", "label": "数据与指标"},
+      {"chevron": "方法", "label": "模型与算法"},
+      {"chevron": "求解", "label": "求解与对比"},
+      {"chevron": "评价", "label": "稳健性与推广"}
+    ],
+    "band1": {"headline": "问题理解与子问题识别", "items": ["子问题一", "子问题二", "子问题三"]},
+    "band2": {
+      "sources": ["题目数据", "文献资料"],
+      "prep": "清洗与特征",
+      "assumptions": "模型假设",
+      "symbols": "符号定义",
+      "left_vertical": "准备",
+      "content": "建立指标\n统一数据",
+      "subframe": "指标体系",
+      "dims": ["准确性", "稳健性"],
+      "right_vertical": "数据准备",
+      "metrics": [["样本", "n=300"], ["拟合", "R²"], ["稳定", "CV<1"]],
+      "aggregator": "指标汇总",
+      "datasource": "题目数据与文献"
+    },
+    "band3": {
+      "top": "机理分析",
+      "bottom": "数据驱动",
+      "left": ["线性回归", "优化算法", "随机森林"],
+      "right": ["约束推导", "参数校准", "交叉验证"],
+      "left_vertical": "方法",
+      "right_vertical": "依据",
+      "content": "模型选型对比\n确定主模型"
+    },
+    "band4": {
+      "banner": "求解与结果对比",
+      "left_vertical": "求解",
+      "right_vertical": "对比",
+      "left_arrow_labels": ["主模型", "对比模型"],
+      "right_arrow_labels": ["指标", "验证"],
+      "left_items": ["数值求解", "算法迭代", "误差验证"],
+      "right_items": ["基线模型", "误差分析", "鲁棒测试"],
+      "right_spans": ["结论一致"],
+      "middle": "相互印证"
+    },
+    "band5": {
+      "left_items": ["参数敏感性", "边界测试", "稳定检验"],
+      "corner": "稳健性",
+      "pill": "结论与推广",
+      "cycle": ["评估", "迭代", "定稿"],
+      "content": "敏感性分析与评价",
+      "hex": "稳健",
+      "eval": "可信",
+      "metrics": ["可解释", "数据依赖", "通用"],
+      "cases": ["论文复用", "竞赛推广"]
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "mcm-pilot-suite",
+  "version": "0.3.0",
+  "private": true,
+  "description": "数学建模竞赛（CUMCM/MCM）在 DeepSeek Harness 上的一体化工具链：mcm-pilot（编排）+ dsh-plot-tools（绘图）。",
+  "license": "MIT",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "doctor": "node tools/doctor.mjs",
+    "selfcheck": "node tools/doctor.mjs --full"
+  }
+}

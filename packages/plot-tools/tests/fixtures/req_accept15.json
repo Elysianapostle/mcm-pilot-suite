@@ -1,0 +1,67 @@
+{
+  "language": "zh",
+  "data": [
+    {
+      "path": "tests/fixtures/q1_sensitivity.csv"
+    },
+    {
+      "name": "demo_xy",
+      "value": [
+        ["地区", "投入", "产量"],
+        ["东部", 60, 120],
+        ["东部", 63, 126],
+        ["东部", 67, 133],
+        ["东部", 70, 140],
+        ["西部", 52, 105],
+        ["西部", 58, 115],
+        ["西部", 64, 126],
+        ["西部", 69, 137],
+        ["中部", 75, 150],
+        ["中部", 81, 159],
+        ["中部", 88, 170],
+        ["中部", 94, 183]
+      ]
+    }
+  ],
+  "plots": [
+    {
+      "output_name": "fig_accept_scatter",
+      "chart_type": "scatter",
+      "data_ref": "demo_xy",
+      "x": "投入",
+      "y": "产量",
+      "hue": "地区",
+      "notes": "验收：散点图（带回归线与分组 r）"
+    },
+    {
+      "output_name": "fig_accept_violin",
+      "chart_type": "violin",
+      "data_ref": "tests/fixtures/q1_sensitivity.csv",
+      "x": "地区",
+      "y": "产量",
+      "notes": "验收：小提琴图（按地区分组）"
+    },
+    {
+      "output_name": "fig_accept_hist",
+      "chart_type": "hist",
+      "data_ref": "tests/fixtures/q1_sensitivity.csv",
+      "y": "产量",
+      "notes": "验收：直方图（含核密度叠加）"
+    },
+    {
+      "output_name": "fig_accept_kde",
+      "chart_type": "kde",
+      "data_ref": "tests/fixtures/q1_sensitivity.csv",
+      "y": "产量",
+      "notes": "验收：密度图"
+    },
+    {
+      "output_name": "fig_accept_err",
+      "chart_type": "errorbar",
+      "data_ref": "tests/fixtures/q1_sensitivity.csv",
+      "x": "地区",
+      "y": "产量",
+      "notes": "验收：误差棒图（各分组均值±SD）"
+    }
+  ]
+}

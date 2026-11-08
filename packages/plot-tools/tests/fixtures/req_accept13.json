@@ -1,0 +1,18 @@
+{
+  "language": "zh",
+  "data": [
+    {"path": "tests/fixtures/q1_sensitivity.csv", "format": "csv"}
+  ],
+  "plots": [
+    {
+      "output_name": "fig_dsh_sub",
+      "chart_type": "line",
+      "data_ref": "tests/fixtures/q1_sensitivity.csv",
+      "x": "时间",
+      "y": "产量",
+      "hue": "地区",
+      "ci": true,
+      "notes": "DSH 子代理验收：产量趋势"
+    }
+  ]
+}

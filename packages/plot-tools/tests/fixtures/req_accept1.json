@@ -1,0 +1,28 @@
+{
+  "language": "zh",
+  "figure_dir": "figures",
+  "data": [
+    {"path": "tests/fixtures/q1_sensitivity.csv", "format": "csv"}
+  ],
+  "plots": [
+    {
+      "output_name": "fig1_trend",
+      "chart_type": "line",
+      "data_ref": "tests/fixtures/q1_sensitivity.csv",
+      "x": "时间",
+      "y": "产量",
+      "hue": "地区",
+      "ci": true,
+      "figsize": "single",
+      "notes": "问题一产量随时间变化趋势（按地区分组，含95%置信带）"
+    },
+    {
+      "output_name": "fig2_rank",
+      "chart_type": "barh",
+      "data_ref": "tests/fixtures/q1_sensitivity.csv",
+      "x": "时间",
+      "y": "产量",
+      "notes": "各月份平均产量水平条形图"
+    }
+  ]
+}

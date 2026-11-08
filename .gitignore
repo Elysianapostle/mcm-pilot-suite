@@ -1,0 +1,21 @@
+# 输出与本地环境（不要提交）
+outputs/
+workspace/
+workspace_bak*/
+fixtures/_tmp/
+.mplcache/
+__pycache__/
+*.py[cod]
+node_modules/
+mcm-pilot.config.json
+
+# 生成物 / 临时
+*.log
+*.out.json
+*.bak-*
+*.rar
+*.zip
+figures/_gen/
+out/
+.DS_Store
+Thumbs.db

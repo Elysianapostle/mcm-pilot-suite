@@ -1,0 +1,14 @@
+{
+  "template": "stageflow-3col",
+  "language": "zh",
+  "lint_only": true,
+  "content": {
+    "blocks": [
+      {
+        "sections": [
+          {"type": "mystery", "cards": []}
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "language": "zh",
+  "data": [
+    {
+      "path": "tests/fixtures/q1_sensitivity.csv"
+    }
+  ],
+  "plots": [
+    {
+      "output_name": "fig_accept_grouped",
+      "chart_type": "grouped_bar",
+      "data_ref": "tests/fixtures/q1_sensitivity.csv",
+      "x": "地区",
+      "y": "产量",
+      "notes": "快查：措辞修复后的分组文本"
+    },
+    {
+      "output_name": "fig_accept_kde2",
+      "chart_type": "kde",
+      "data_ref": "tests/fixtures/q1_sensitivity.csv",
+      "y": "产量",
+      "notes": "快查：措辞修复后的 kde 峰值文本"
+    }
+  ]
+}

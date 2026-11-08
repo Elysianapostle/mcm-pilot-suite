@@ -1,0 +1,22 @@
+{
+  "language": "zh",
+  "data": [
+    {"path": "tests/fixtures/q1_sensitivity.csv", "format": "csv"}
+  ],
+  "plots": [
+    {
+      "output_name": "fig_dup",
+      "chart_type": "line",
+      "data_ref": "tests/fixtures/q1_sensitivity.csv",
+      "x": "时间",
+      "y": "产量"
+    },
+    {
+      "output_name": "fig_dup",
+      "chart_type": "barh",
+      "data_ref": "tests/fixtures/q1_sensitivity.csv",
+      "x": "时间",
+      "y": "产量"
+    }
+  ]
+}

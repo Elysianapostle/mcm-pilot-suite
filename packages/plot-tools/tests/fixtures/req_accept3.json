@@ -1,0 +1,64 @@
+{
+  "template": "roadmap-5band",
+  "output_name": "roadmap_demo",
+  "language": "zh",
+  "content": {
+    "title": "面向区域需求的产能分配优化研究",
+    "rails": [
+      {"chevron": "破题", "label": "问题界定"},
+      {"chevron": "准备", "label": "数据口径"},
+      {"chevron": "方法", "label": "模型算法"},
+      {"chevron": "结果", "label": "实证结论"},
+      {"chevron": "评价", "label": "稳健推广"}
+    ],
+    "band1": {
+      "headline": "如何向三个地区分配产能",
+      "items": ["东部缺口最大", "西部弹性不足", "中部成本居中"]
+    },
+    "band2": {
+      "sources": ["历史产量", "区域订单", "成本台账"],
+      "prep": "清洗对齐",
+      "assumptions": "需求按月稳定",
+      "symbols": "P_i, C_i",
+      "left_vertical": "输入侧",
+      "content": "区域产能匹配模型",
+      "subframe": "特征维度",
+      "dims": ["产量", "成本", "弹性"],
+      "right_vertical": "度量侧",
+      "metrics": [["缺口", "缺量占比"], ["成本", "单位成本"], ["波动", "供给弹性"]],
+      "aggregator": "加权汇总",
+      "datasource": "来自产量台账与订单明细"
+    },
+    "band3": {
+      "top": "全局视角",
+      "bottom": "局部视角",
+      "left": ["约束规划", "目标函数", "灵敏度"],
+      "right": ["异质性来源", "约束松紧", "传导机制"],
+      "left_vertical": "建模要素",
+      "right_vertical": "机制机理",
+      "content": "双视角产能分配优化模型"
+    },
+    "band4": {
+      "banner": "仿真验证：三地区缺口均在计划期内收敛",
+      "left_vertical": "基准模型",
+      "right_vertical": "结论侧",
+      "left_arrow_labels": ["优化前", "优化后"],
+      "right_arrow_labels": ["增益", "余量"],
+      "left_items": ["东部缺口 34%", "西部供给不足", "中部微有富余", "总缺口 195"],
+      "right_items": ["产能上移", "弹性扩产", "成本下探", "路径细化"],
+      "right_spans": ["缺口清零", "成本\n-4.2%"],
+      "middle": "统一口径"
+    },
+    "band5": {
+      "left_items": ["参数敏感性", "数据质量", "极端情形", "时序外推"],
+      "corner": "局限与展望",
+      "pill": "灵敏度分析护航",
+      "cycle": ["评估", "生成", "迭代"],
+      "content": "评价稳健推广闭环",
+      "hex": "稳健",
+      "eval": "四维",
+      "metrics": ["精度", "稳定性", "可解释", "扩展性"],
+      "cases": ["东部基地", "西部园区", "中部产线"]
+    }
+  }
+}

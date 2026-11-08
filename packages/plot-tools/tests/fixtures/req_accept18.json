@@ -1,0 +1,60 @@
+{
+  "template": "roadmap-5band",
+  "output_name": "roadmap_mixed",
+  "language": "zh",
+  "content": {
+    "title": "一次调用返回全部问题的演示",
+    "rails": [
+      {"chevron": "破题", "label": "问题界定"},
+      {"chevron": "准备", "label": "数据口径"},
+      {"chevron": "方法", "label": "模型算法"},
+      {"chevron": "结果", "label": "实证结论"},
+      {"chevron": "评价", "label": "稳健推广"}
+    ],
+    "band1": {
+      "headline": "用于展示聚合校验的问题样例",
+      "items": ["子问题一", "子问题二", "子问题三"]
+    },
+    "band2": {
+      "sources": ["历史产量", "区域订单"],
+      "assumptions": "需求按月稳定",
+      "symbols": "P_i, C_i",
+      "left_vertical": "输入侧",
+      "content": "区域产能匹配模型",
+      "subframe": "特征维度",
+      "dims": ["产量", "成本"],
+      "right_vertical": "度量侧",
+      "metrics": [["缺口", "缺量占比超过百分之六十"], ["成本", "单位成本"]],
+      "aggregator": "加权汇总",
+      "datasource": "产量台账与订单明细"
+    },
+    "band3": {
+      "top": "全局视角",
+      "bottom": "局部视角",
+      "left": ["约束规划", "目标函数"],
+      "right": ["异质性来源", "传导机制"],
+      "left_vertical": "建模要素",
+      "right_vertical": "机制机理",
+      "content": "双视角产能分配优化模型"
+    },
+    "band4": {
+      "banner": "仿真验证结果对比",
+      "left_vertical": "基准模型",
+      "right_vertical": "结论侧",
+      "left_items": ["优化前", "优化后"],
+      "right_items": ["产能上移", "弹性扩产", "成本下探"],
+      "right_spans": ["结论一致"],
+      "middle": "统一口径"
+    },
+    "band5": {
+      "left_items": ["参数敏感性", "边界测试", "稳定检验"],
+      "corner": "稳健性",
+      "pill": "结论与推广",
+      "cycle": ["评估", "迭代", "定稿"],
+      "content": "敏感性分析与评价",
+      "hex": "稳健",
+      "metrics": [["优点", "可解释"], ["依赖", "数据量"]],
+      "cases": ["论文复用"]
+    }
+  }
+}

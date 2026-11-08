@@ -1,0 +1,39 @@
+{
+  "language": "zh",
+  "figure_dir": "figures",
+  "data": [
+    {"path": "tests/fixtures/q1_sensitivity.csv", "format": "csv"}
+  ],
+  "plots": [
+    {
+      "output_name": "fig3_batch_line",
+      "chart_type": "line",
+      "data_ref": "tests/fixtures/q1_sensitivity.csv",
+      "x": "时间",
+      "y": "产量",
+      "hue": "地区",
+      "ci": true,
+      "annotations": [{"text": "东部峰值", "at": [11, 195.7]}],
+      "notes": "批次折线图（分组+置信带）"
+    },
+    {
+      "output_name": "fig4_batch_box",
+      "chart_type": "box",
+      "data_ref": "tests/fixtures/q1_sensitivity.csv",
+      "y": "产量",
+      "hue": "地区",
+      "color": "tertiary",
+      "notes": "批次箱线图（按地区分布）"
+    },
+    {
+      "output_name": "fig5_batch_grouped",
+      "chart_type": "grouped_bar",
+      "data_ref": "tests/fixtures/q1_sensitivity.csv",
+      "x": "时间",
+      "y": "产量",
+      "hue": "地区",
+      "color": "secondary",
+      "notes": "批次分组柱状图（地区对比）"
+    }
+  ]
+}

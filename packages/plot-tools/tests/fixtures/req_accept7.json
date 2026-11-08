@@ -1,0 +1,14 @@
+{
+  "language": "zh",
+  "data": [
+    {"path": "tests/fixtures/q1_sensitivity.csv", "format": "csv"}
+  ],
+  "plots": [
+    {
+      "output_name": "fig_badtype",
+      "chart_type": "pie3d",
+      "data_ref": "tests/fixtures/q1_sensitivity.csv",
+      "y": "产量"
+    }
+  ]
+}

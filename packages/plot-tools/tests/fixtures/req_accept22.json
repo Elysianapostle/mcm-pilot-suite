@@ -1,0 +1,9 @@
+{
+  "template": "bogus-3col",
+  "output_name": "fig_invalid_tpl",
+  "language": "zh",
+  "content": {
+    "title": "非法模板探测",
+    "blocks": []
+  }
+}

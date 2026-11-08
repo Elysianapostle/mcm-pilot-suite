@@ -1,0 +1,64 @@
+{
+  "template": "roadmap-5band",
+  "output_name": "fig_plugin_roadmap",
+  "language": "zh",
+  "content": {
+    "title": "独立论文绘图插件研制路线",
+    "rails": [
+      {"chevron": "破题", "label": "需求界定"},
+      {"chevron": "准备", "label": "环境口径"},
+      {"chevron": "方法", "label": "实现路线"},
+      {"chevron": "结果", "label": "验收交付"},
+      {"chevron": "评价", "label": "局限提升"}
+    ],
+    "band1": {
+      "headline": "如何做出可靠可用的绘图插件",
+      "items": ["契约先行", "两条管线", "分节验收"]
+    },
+    "band2": {
+      "sources": ["需求文档", "验收样例", "渲染脚本"],
+      "prep": "解析契约",
+      "assumptions": "沿用资产",
+      "symbols": "§5 契约",
+      "left_vertical": "输入侧",
+      "content": "请求-输出契约",
+      "subframe": "依赖口径",
+      "dims": ["CLI", "DSH", "自检"],
+      "right_vertical": "输出侧",
+      "metrics": [["输入", "§2.1 谱构"], ["输出", "§5 契约"], ["兜底", "结构化错误"]],
+      "aggregator": "对照核验",
+      "datasource": "绘图提示词汇总"
+    },
+    "band3": {
+      "top": "确定性优先",
+      "bottom": "兜底降级",
+      "left": ["CLI 管线", "工具注册", "自检脚本"],
+      "right": ["子进程隔离", "错误透传", "导出降级"],
+      "left_vertical": "实现手段",
+      "right_vertical": "稳健机制",
+      "content": "实现与验收双线推进"
+    },
+    "band4": {
+      "banner": "自检绿灯，六项验收全部通过",
+      "left_vertical": "开发侧",
+      "right_vertical": "结论侧",
+      "left_arrow_labels": ["验证", "回归"],
+      "right_arrow_labels": ["证据", "闭环"],
+      "left_items": ["数据图出图", "流程图渲染", "结构化报错", "工具注册"],
+      "right_items": ["PNG+PDF", ".drawio", "ok=true", "契约齐"],
+      "right_spans": ["验收1-6", "全绿"],
+      "middle": "同一管线"
+    },
+    "band5": {
+      "left_items": ["重启即失", "外部依赖", "内联上限", "LLM 缺失"],
+      "corner": "局限与展望",
+      "pill": "插件化常驻",
+      "cycle": ["评估", "修复", "重验"],
+      "content": "持续迭代保持可用",
+      "hex": "稳健",
+      "eval": "历验",
+      "metrics": ["可用", "可复现", "可降级", "可扩展"],
+      "cases": ["CLI 批处理", "DSH 子代理", "接入常驻"]
+    }
+  }
+}
